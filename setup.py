@@ -6,10 +6,7 @@ from setuptools import setup, find_packages
 # dep sugar.
 _ver = sys.version_info
 
-if _ver[0] == 2:
-    dep = ['simplejson', 'requests']
-elif _ver[0] == 3:
-    dep = ['requests']
+dep = ['requests']
 
 setup(
     name='mailsnake',
